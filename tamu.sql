@@ -1,0 +1,12 @@
+CREATE DATABASE daftar_tamu;
+USE daftar_tamu;
+
+CREATE TABLE datatamu (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    tanggal DATE NOT NULL,
+    nama VARCHAR(100) NOT NULL,
+    alamat VARCHAR(100) NOT NULL,
+    tujuan VARCHAR(100) NOT NULL,
+    noHP VARCHAR(100) NOT NULL,
+    tgl_disimpan TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
